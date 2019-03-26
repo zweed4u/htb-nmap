@@ -21,7 +21,7 @@ def get_gateway(interface):
     raise Exception(f'Unable to find gateway on {interface}')
 
 def is_vpn_connected():
-    host = get_gateway('tun0')  # https://serverfault.com/questions/766527/how-to-find-my-vpn-gateway
+    host = get_gateway('tun0')
     ping = subprocess.Popen(["ping", "-n", "1", "-w", "1", host], stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()[0].decode()
     return not(('unreachable' in str(ping)) or ('timed' in str(ping)) or ('failure' in str(ping)))
 
