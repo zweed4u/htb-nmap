@@ -1,0 +1,5 @@
+# Modify this file and save it as config.cfg
+
+[authentication]
+username_email = EMAIL_LOGIN_HERE
+password = PASSWORD_LOGIN_HERE

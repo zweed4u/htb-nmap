@@ -1,0 +1,5 @@
+# user config
+config.cfg
+
+# sub dirs of machine nmap results
+*/*
